@@ -18,7 +18,27 @@ void main(List<String> arguments) {
 
   // stdout.writeln(gl);
 
-  var setNilai1 = <int>{};
+
+  // List Input
+  // var setNilai1 = <int>{};
+  // var setNilai2 = <int>{3,3,4,5};
+
+  // stdout.write("Jumlah data setNilai1 : ");
+  // String? input = stdin.readLineSync();
+  // int jumlah = int.tryParse(input ?? '0') ?? 0;
+  // for (var i = 0; i < jumlah; i++) {
+  //   stdout.write("Masukkan nilai ke-${i+1}: ");
+  //   String? nilaiInput = stdin.readLineSync();
+  //   int nilai = int.tryParse(nilaiInput ?? '0') ?? 0;
+  //   setNilai1.add(nilai);
+  // }
+
+  // print(setNilai1);
+  // print(setNilai1.union(setNilai2));
+  // print(setNilai1.intersection(setNilai2));
+
+  // List Input String
+  var setNilai1 = <String>{};
   var setNilai2 = <int>{3,3,4,5};
 
   stdout.write("Jumlah data setNilai1 : ");
@@ -27,11 +47,9 @@ void main(List<String> arguments) {
   for (var i = 0; i < jumlah; i++) {
     stdout.write("Masukkan nilai ke-${i+1}: ");
     String? nilaiInput = stdin.readLineSync();
-    int nilai = int.tryParse(nilaiInput ?? '0') ?? 0;
+    String nilai = nilaiInput ?? '';
     setNilai1.add(nilai);
   }
 
-  print(setNilai1);
-  print(setNilai1.union(setNilai2));
-  print(setNilai1.intersection(setNilai2));
+  print(setNilai1.elementAt(1));
 }
